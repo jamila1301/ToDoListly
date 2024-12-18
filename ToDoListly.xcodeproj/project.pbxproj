@@ -3,32 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3B5ACD482CE8C99800A21E3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B5ACD412CE8C99800A21E3B /* GoogleService-Info.plist */; };
+		3B6285FB2CCE91B00085D5E0 /* ToDoListly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B6285F52CCE91B00085D5E0 /* ToDoListly.xcdatamodeld */; };
+		59A25A59B73C8D69544128EA /* Pods_ToDoListly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3B417EB16052AB67F849BE /* Pods_ToDoListly.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		2F3B417EB16052AB67F849BE /* Pods_ToDoListly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoListly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5ACD412CE8C99800A21E3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B5ACD422CE8C99800A21E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B6285CF2CCE90AE0085D5E0 /* ToDoListly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6285F82CCE91B00085D5E0 /* ToDoListly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListly.xcdatamodel; sourceTree = "<group>"; };
+		BF2DDD9CF91CFE2956E923A7 /* Pods-ToDoListly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListly.release.xcconfig"; path = "Target Support Files/Pods-ToDoListly/Pods-ToDoListly.release.xcconfig"; sourceTree = "<group>"; };
+		E5573D3E866E3A1075BF5F4E /* Pods-ToDoListly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListly.debug.xcconfig"; path = "Target Support Files/Pods-ToDoListly/Pods-ToDoListly.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3B6285E42CCE90AF0085D5E0 /* Exceptions for "ToDoListly" folder in "ToDoListly" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 3B6285CE2CCE90AE0085D5E0 /* ToDoListly */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		3B6285D12CCE90AE0085D5E0 /* ToDoListly */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				3B6285E42CCE90AF0085D5E0 /* Exceptions for "ToDoListly" folder in "ToDoListly" target */,
-			);
-			path = ToDoListly;
-			sourceTree = "<group>";
-		};
+		3B5ACC892CE8C09200A21E3B /* App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = App; sourceTree = "<group>"; };
+		3B5ACC8A2CE8C11600A21E3B /* Modules */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Modules; sourceTree = "<group>"; };
+		3B5ACCB72CE8C13800A21E3B /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
+		3B5ACCDD2CE8C15B00A21E3B /* Utilities */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Utilities; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A25A59B73C8D69544128EA /* Pods_ToDoListly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +44,10 @@
 		3B6285C62CCE90AE0085D5E0 = {
 			isa = PBXGroup;
 			children = (
-				3B6285D12CCE90AE0085D5E0 /* ToDoListly */,
+				3B6285F72CCE91B00085D5E0 /* ToDoListly */,
 				3B6285D02CCE90AE0085D5E0 /* Products */,
+				98A72EE1AA11F7F46E5D047D /* Pods */,
+				698B2F3E4ED36A8B388B2B1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +59,37 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3B6285F72CCE91B00085D5E0 /* ToDoListly */ = {
+			isa = PBXGroup;
+			children = (
+				3B5ACCDD2CE8C15B00A21E3B /* Utilities */,
+				3B5ACCB72CE8C13800A21E3B /* Resources */,
+				3B5ACC8A2CE8C11600A21E3B /* Modules */,
+				3B5ACC892CE8C09200A21E3B /* App */,
+				3B5ACD412CE8C99800A21E3B /* GoogleService-Info.plist */,
+				3B5ACD422CE8C99800A21E3B /* Info.plist */,
+				3B6285F52CCE91B00085D5E0 /* ToDoListly.xcdatamodeld */,
+			);
+			path = ToDoListly;
+			sourceTree = "<group>";
+		};
+		698B2F3E4ED36A8B388B2B1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F3B417EB16052AB67F849BE /* Pods_ToDoListly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98A72EE1AA11F7F46E5D047D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5573D3E866E3A1075BF5F4E /* Pods-ToDoListly.debug.xcconfig */,
+				BF2DDD9CF91CFE2956E923A7 /* Pods-ToDoListly.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,20 +97,23 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6285E52CCE90AF0085D5E0 /* Build configuration list for PBXNativeTarget "ToDoListly" */;
 			buildPhases = (
+				90E3138A6C3BA792790BDDD3 /* [CP] Check Pods Manifest.lock */,
 				3B6285CB2CCE90AE0085D5E0 /* Sources */,
 				3B6285CC2CCE90AE0085D5E0 /* Frameworks */,
 				3B6285CD2CCE90AE0085D5E0 /* Resources */,
+				99C5B0391B063CAF7120971E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				3B6285D12CCE90AE0085D5E0 /* ToDoListly */,
+				3B5ACC892CE8C09200A21E3B /* App */,
+				3B5ACC8A2CE8C11600A21E3B /* Modules */,
+				3B5ACCB72CE8C13800A21E3B /* Resources */,
+				3B5ACCDD2CE8C15B00A21E3B /* Utilities */,
 			);
 			name = ToDoListly;
-			packageProductDependencies = (
-			);
 			productName = ToDoListly;
 			productReference = 3B6285CF2CCE90AE0085D5E0 /* ToDoListly.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +134,7 @@
 				};
 			};
 			buildConfigurationList = 3B6285CA2CCE90AE0085D5E0 /* Build configuration list for PBXProject "ToDoListly" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,8 +142,6 @@
 				Base,
 			);
 			mainGroup = 3B6285C62CCE90AE0085D5E0;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 3B6285D02CCE90AE0085D5E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,16 +156,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5ACD482CE8C99800A21E3B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90E3138A6C3BA792790BDDD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDoListly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99C5B0391B063CAF7120971E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoListly/Pods-ToDoListly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoListly/Pods-ToDoListly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToDoListly/Pods-ToDoListly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B6285CB2CCE90AE0085D5E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B6285FB2CCE91B00085D5E0 /* ToDoListly.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,19 +218,21 @@
 /* Begin XCBuildConfiguration section */
 		3B6285E62CCE90AF0085D5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5573D3E866E3A1075BF5F4E /* Pods-ToDoListly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2H5H8AUKBK;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoListly/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -168,19 +248,21 @@
 		};
 		3B6285E72CCE90AF0085D5E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2DDD9CF91CFE2956E923A7 /* Pods-ToDoListly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2H5H8AUKBK;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoListly/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +417,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B6285F52CCE91B00085D5E0 /* ToDoListly.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B6285F82CCE91B00085D5E0 /* ToDoListly.xcdatamodel */,
+			);
+			currentVersion = 3B6285F82CCE91B00085D5E0 /* ToDoListly.xcdatamodel */;
+			path = ToDoListly.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3B6285C72CCE90AE0085D5E0 /* Project object */;
 }
